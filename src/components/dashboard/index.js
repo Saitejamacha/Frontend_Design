@@ -126,7 +126,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       {isSidebarVisible && (
-        <div className="sidebar">
+        <div className="sidebar" >
           <h2>Skilify Admin</h2>
           <ul>
             <li className="list-styles">
