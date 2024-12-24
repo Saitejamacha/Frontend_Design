@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Line, Bar } from "react-chartjs-2";
-import { Chart } from "chart.js";
+import { Chart, registerables } from "chart.js";
 import { MdOutlineNotificationsNone } from "react-icons/md";
 import { LuMessageCircleMore } from "react-icons/lu";
 import { TbWaveSawTool } from "react-icons/tb";
@@ -15,6 +15,8 @@ import { FiHome } from "react-icons/fi";
 import { BsUpload } from "react-icons/bs";
 import user_img from "../../assets/user_img.jpg";
 import "./index.css";
+
+Chart.register(...registerables);
 
 const Dashboard = () => {
   const navigate = useNavigate();
